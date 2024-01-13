@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+::selection {
+  background-color: #f0f0f0;
+  color: #09090b;
+}
+body {
+  color: #f0f0f0;
+  background-color: #09090b;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.heroSection::before,
+.heroSection::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.heroSection::before {
+  top: -10px;
+  background-image: url(/dot.svg);
+  z-index: -2;
+}
+.heroSection::after {
+  top: 0;
+  background-image: url(/light.svg);
+  z-index: -1;
+}
+.contactSection:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/circlelight.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+.card {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+@layer utilities {
+  .headingStyle {
+    @apply text-[2.7rem] max-[600px]:text-[1.9rem] font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#F0F0F0] to-[#616161];
+  }
+  .styleSection {
+    @apply flex gap-3 max-w-screen-lg px-[1rem]  w-full mx-auto;
+  }
+  .boxFill {
+    @apply transition-shadow duration-300 ease-in hover:shadow-md hover:shadow-neutral-50/90;
+  }
+  .boxWrapper {
+    @apply bg-gradient-to-br from-[#E3E3E3] via-[#303030] to-[#303030] transition-shadow duration-300 ease-in group-hover:shadow-lg group-hover:shadow-neutral-50/50;
+  }
+  .hoverShadow {
+    @apply;
+  }
+  .boxContain {
+    @apply bg-[#121212] flex items-center gap-2;
+  }
+  .sideLine {
+    @apply before:flex before:content-[''] before:absolute before:bg-gradient-to-b before:from-transparent before:via-neutral-300 before:to-transparent before:w-[2px] max-[600px]:before:w-[1px] before:h-[100%] before:top-[30px] before:left-[18px] before:max-[600px]:left-[14px];
+  }
+  .separator {
+    @apply relative w-full h-[2px] bg-gradient-to-l from-transparent via-neutral-700 to-transparent my-[4rem] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-l before:from-transparent before:via-neutral-600 before:to-transparent before:z-[-2] before:blur-sm;
+  }
+  .blockText {
+    @apply underline font-bold decoration-solid decoration-white;
+  }
+}
