@@ -14,7 +14,7 @@ export default function Header() {
           <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
         </div>
         <h4 className="font-medium text-[14px] max-[600px]:text-[12px]">
-          Available
+          Available for Full-Time
         </h4>
       </motion.div>
     </header>

@@ -21,7 +21,7 @@ export default function Home() {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'G-GFF36FH35B');
+          gtag('config', 'G-9ERWD5S146');
         `}
         </Script>
         <Header />
@@ -30,6 +30,7 @@ export default function Home() {
       <Experties />
       <div className="separator"></div>
       <Projects />
+      <Resume />
       <motion.div
         className="overflow-y-hidden relative contactSection max-[600px]:bg-top bg-fixed max-[780px]:before:translate-y-[5%] w-full h-full"
         initial={{ opacity: 0 }}
@@ -39,7 +40,6 @@ export default function Home() {
       >
         <Contact />
       </motion.div>
-      <Resume />
       <Cookies />
     </main>
   );
