@@ -4,7 +4,7 @@ import Experties from "./components/experties";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Projects from "./components/projects";
-import Resume from "./components/resume";
+import Resume from "./components/Resume";
 import Contact from "./components/contact";
 import Cookies from "./UI/Cookies";
 import { motion } from "framer-motion";
@@ -39,6 +39,7 @@ export default function Home() {
       >
         <Contact />
       </motion.div>
+      <Resume />
       <Cookies />
     </main>
   );
