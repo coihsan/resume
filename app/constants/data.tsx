@@ -122,9 +122,9 @@ export const commonjob = [
 export const ResumeData = [
   {
     id: 0,
-    company: "PT. Anang Jhonny",
+    company: "",
     year: "Current job",
-    position: "Digital Marketing",
+    position: "Freelance Digital Marketing",
     src: "/briefcase.svg",
   },
   {
