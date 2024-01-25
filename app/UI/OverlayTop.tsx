@@ -8,7 +8,7 @@ export default function OverlayTop() {
     const handleScroll = () => {
       const scrollHeight = document.documentElement.scrollHeight;
       const scrollTop = document.documentElement.scrollTop;
-      const scrollPercent = (scrollTop / scrollHeight) * 100;
+      const scrollPercent = (scrollTop / scrollHeight) * 10;
 
       setIsScroll(scrollPercent >= 5);
     };

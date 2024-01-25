@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/error.tsx"],"sourcesContent":["\"use client\"; // Error components must be Client Components\n\nimport { useEffect } from \"react\";\n\nexport default function Error({\n  error,\n  reset,\n}: {\n  error: Error & { digest?: string };\n  reset: () => void;\n}) {\n  useEffect(() => {\n    // Log the error to an error reporting service\n    console.error(error);\n  }, [error]);\n\n  return (\n    <div>\n      <h2>Something went wrong!</h2>\n      <button\n        onClick={\n          // Attempt to recover by trying to re-render the segment\n          () => reset()\n        }\n      >\n        Try again\n      </button>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;AAAA,cAAc,6CAA6C;;AAI5C,SAAS,MAAM,EAC5B,KAAK,EACL,KAAK,EAIN;;IACC,2KAAU;QACR,8CAA8C;QAC9C,QAAQ,KAAK,CAAC;IAChB,GAAG;QAAC;KAAM;IAEV,qBACE,wLAAC;;0BACC,wLAAC;0BAAG;;;;;;0BACJ,wLAAC;gBACC,SACE,wDAAwD;gBACxD,IAAM;0BAET;;;;;;;;;;;;AAKP;GAzBwB;KAAA"}},
+    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

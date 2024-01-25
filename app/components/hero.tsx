@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { position } from "../constants/data";
 import CalltoAction from "../UI/CalltoAction";
-import CopyButton from "../UI/CopyButton";
 import { motion } from "framer-motion";
 const container = {
   hidden: { opacity: 0, y: 100 },
@@ -30,14 +29,14 @@ export default function Hero() {
     <section className="relative  w-full h-[100%]">
       <div className="styleSection max-[600px]:py-[4rem] py-[7rem] flex items-center justify-start max-[600px]:flex-col max-[600px]:justify-center max-[600px]:items-center">
         <motion.div
-          className="rounded-[54px] relative overflow-hidden"
+          className="rounded-[54px] relative overflow-hidden bg-white/5 p-1"
           variants={container}
           initial="hidden"
           animate="visible"
         >
           <Image
-            className="rounded-[54px] max-[600px]:w-[200px] backdrop-grayscale"
-            src={"/avatar.jpeg"}
+            className="rounded-[54px] max-[600px]:w-[200px]"
+            src={"/ihsan.webp"}
             width={350}
             height={350}
             alt="avatar"
@@ -122,11 +121,6 @@ export default function Hero() {
             className="flex gap-3 max-[600px]:mx-auto pt-[1rem]"
           >
             <CalltoAction />
-            <CopyButton
-              className="pl-[25px] w-[100%]"
-              textButton="E-Mail"
-              textCopy="co.ihsan@gmail.com"
-            />
           </motion.div>
         </div>
       </div>

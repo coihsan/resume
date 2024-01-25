@@ -37,7 +37,7 @@ export default function Footer() {
           Developed by <strong>coihsan</strong>
         </p>
         <code className="text-sm">
-          Last update : 14 {thisMonth} {thisYear}
+          Last update : 02 {thisMonth} {thisYear}
         </code>
       </div>
     </footer>

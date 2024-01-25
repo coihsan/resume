@@ -1,7 +1,6 @@
 "use client";
 import CalltoAction from "../UI/CalltoAction";
 import MotionDiv from "../constants/MotionDiv";
-import CopyButton from "../UI/CopyButton";
 import Footer from "../components/footer";
 export default function Contact() {
   return (
@@ -11,14 +10,7 @@ export default function Contact() {
           If my profile is a match for your qualifications, I am available for
           work right now!
         </h1>
-        <div className="flex gap-3 max-[600px]:mx-auto">
-          <CalltoAction />
-          <CopyButton
-            className={"pl-[25px] w-[100%]"}
-            textButton="E-Mail"
-            textCopy="co.ihsan@gmail.com"
-          />
-        </div>
+        <CalltoAction />
         <Footer />
       </MotionDiv>
     </section>
