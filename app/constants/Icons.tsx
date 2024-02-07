@@ -35,7 +35,7 @@ export const IconList = [
   {
     id: 2,
     title: "Github",
-    url: "#",
+    url: "https://github.com/coihsan",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ export const IconList = [
   },
   {
     id: 3,
-    url: "#",
+    url: "https://codepen.io/coihsan",
     title: "Codepen",
     svg: (
       <svg
