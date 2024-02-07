@@ -1,8 +1,9 @@
+"use client";
+import { useState } from "react";
 import { IconList } from "../constants/Icons";
 import Link from "next/link";
-import Image from "next/image";
 export default function Footer() {
-  const today = new Date();
+  const [isToday, setIsToday] = useState(new Date());
   const month = [
     "January",
     "February",
@@ -17,8 +18,18 @@ export default function Footer() {
     "November",
     "December",
   ];
-  const thisYear = today.getFullYear();
-  const thisMonth = month[today.getMonth()];
+  const thisUpdate = 3;
+  const thisDate = isToday.getDate();
+  const thisYear = isToday.getFullYear();
+  const currentMonth = month[isToday.getMonth()];
+  const recentMonth = month[isToday.getMonth() - 1];
+  let thisFormatDate;
+  if (thisDate < thisUpdate) {
+    thisFormatDate = recentMonth;
+  } else {
+    thisFormatDate = currentMonth;
+  }
+  const thisFormat = thisFormatDate + " " + thisYear;
   return (
     <footer className="styleSection mx-auto flex flex-col items-center pb-[3rem]">
       <div className="flex items-center gap-3">
@@ -32,12 +43,12 @@ export default function Footer() {
           </Link>
         ))}
       </div>
-      <div className="w-full flex items-center justify-between max-sm:flex-col-reverse pt-6">
+      <div className="w-full flex items-center justify-between max-sm:flex-col-reverse pt-6 gap-2">
         <p className="text-sm">
           Developed by <strong>coihsan</strong>
         </p>
         <code className="text-sm">
-          Last update : 02 {thisMonth} {thisYear}
+          Last update : {thisUpdate} {thisFormat}
         </code>
       </div>
     </footer>
