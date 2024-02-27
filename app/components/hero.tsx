@@ -1,5 +1,5 @@
 "use client";
-
+import Header from "./header";
 import Image from "next/image";
 import { position } from "../constants/data";
 import CalltoAction from "../UI/CalltoAction";
@@ -27,6 +27,8 @@ const item = {
 export default function Hero() {
   return (
     <section className="relative  w-full h-[100%]">
+      <div className="absolute inset-0 -z-10 h-full w-full bg-zinc-950 bg-[radial-gradient(#151515_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      <Header />
       <div className="styleSection max-[600px]:py-[4rem] py-[7rem] flex items-center justify-start max-[600px]:flex-col max-[600px]:justify-center max-[600px]:items-center">
         <motion.div
           className="rounded-[54px] relative overflow-hidden bg-white/5 p-1"

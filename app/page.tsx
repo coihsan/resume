@@ -13,7 +13,7 @@ import Script from "next/script";
 export default function Home() {
   return (
     <main>
-      <div className="heroSection">
+      <div className="">
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-GFF36FH35B" />
         <Script id="google-analytics">
           {`
@@ -24,13 +24,11 @@ export default function Home() {
           gtag('config', 'G-9ERWD5S146');
         `}
         </Script>
-        <Header />
         <Hero />
       </div>
       <Experties />
       <div className="separator"></div>
       <Projects />
-      <Resume />
       <motion.div
         className="overflow-y-hidden relative contactSection max-[600px]:bg-top bg-fixed max-[780px]:before:translate-y-[5%] w-full h-full"
         initial={{ opacity: 0 }}
