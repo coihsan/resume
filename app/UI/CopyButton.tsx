@@ -25,7 +25,7 @@ const CopyButton: React.FC<CopyButtonProps> = ({
 
   return (
     <button
-      className="flex w-max shadow-md gap-3 items-center justify-center px-4 py-2 rounded-full  bg-transparent border border-[#4C4C4C] hover:border-white hover:bg-neutral-50/10 focus:outline-none transition-all drop-shadow-[0_35px_35px_rgba(255,255,255,100)] ease-linear hover:drop-shadow-[0_35px_35px_rgba(255,255,255,1)]"
+      className="flex w-max shadow-md gap-3 items-center justify-center px-5 py-3 rounded-full bg-transparent border border-[#4C4C4C] hover:border-white hover:bg-neutral-50/10 focus:outline-none transition-all drop-shadow-[0_35px_35px_rgba(255,255,255,100)] ease-linear hover:drop-shadow-[0_35px_35px_rgba(255,255,255,1)]"
       onClick={handleCopyClick}
       style={{ color: isCopied ? "#a1a1aa" : "#171717" }}
     >

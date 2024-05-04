@@ -8,7 +8,7 @@ export default function CalltoAction() {
         className="bg-white text-black hover:shadow-white"
         icon={Icons.whatsapp}
         text="Whatsapp"
-        url={"https://wa.me/6287773332048"}
+        url={"https://wa.me/6289519469524"}
         aria-label="Chat on WhatsApp"
       />
       <CopyButton

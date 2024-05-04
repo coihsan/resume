@@ -9,7 +9,7 @@ export default function ButtonLink({ className, url, icon, text }: Props) {
   return (
     <div>
       <a
-        className={`${className} flex items-center gap-1 px-4 py-2 w-max rounded-full transition-all duration-300 ease-linear shadow-lg`}
+        className={`${className} flex items-center gap-1 px-5 py-3 w-max rounded-full transition-all duration-300 ease-linear shadow-lg`}
         href={url}
       >
         <span>{icon}</span>

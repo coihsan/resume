@@ -344,6 +344,9 @@ video {
 .relative {
   position: relative;
 }
+.inset-0 {
+  inset: 0px;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -355,6 +358,9 @@ video {
 }
 .top-0 {
   top: 0px;
+}
+.-z-10 {
+  z-index: -10;
 }
 .z-10 {
   z-index: 10;
@@ -592,8 +598,12 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27/ var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/grid\.svg\'\)\] {
-  background-image: url('/grid.svg');
+.bg-zinc-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 9 11/ var(--tw-bg-opacity));
+}
+.bg-\[radial-gradient\(\#151515_1px\,transparent_1px\)\] {
+  background-image: radial-gradient(#151515 1px, transparent 1px);
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -663,6 +673,10 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -678,6 +692,10 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .py-\[7rem\] {
   padding-top: 7rem;
@@ -988,6 +1006,9 @@ video {
   text-decoration-color: #fff;
   text-decoration-style: solid;
 }
+.\[background-size\:16px_16px\] {
+  background-size: 16px 16px;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -1074,12 +1095,11 @@ body {
 .hover\:bg-neutral-50\/10:hover {
   background-color: rgb(250 250 250/ 0.1);
 }
-.hover\:bg-neutral-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38/ var(--tw-bg-opacity));
-}
 .hover\:bg-white\/25:hover {
   background-color: rgb(255 255 255/ 0.25);
+}
+.hover\:bg-white\/5:hover {
+  background-color: rgb(255 255 255/ 0.05);
 }
 .hover\:fill-lime-500:hover {
   fill: #84cc16;
